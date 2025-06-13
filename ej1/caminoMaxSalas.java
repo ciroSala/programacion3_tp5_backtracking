@@ -1,17 +1,15 @@
 package ej1;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
 
-public class Ej1<T> {
+public class caminoMaxSalas<T> {
     private ArrayList<T> caminoMaxCantSalas;
-    private Estado e;
+    private Estado<T> e;
 
-    Ej1(){
+    caminoMaxSalas(){
         this.caminoMaxCantSalas = new ArrayList<>();
-        this.e = new Estado();
+        this.e = new Estado<T>();
     }
 
     public ArrayList<T> buscarCamino(T verticeOrigen, T verticeDestino, GrafoDirigido<T> g){
